@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState, useRef, useEffect } from "react";
 import { Movie, SearchData } from "@/types/Types";
+import Logo from '../assets/logo copy.png'
 
 const options = {
   method: "GET",
@@ -56,7 +57,7 @@ const Navbar = () => {
       <nav className="flex items-center justify-center py-4 lg:py-8 absolute top-0 w-full z-30">
         <div className="w-[90%] flex justify-between gap-3">
           <Link href="/" className="flex gap-6 justify-center items-center">
-            <Image src="/logo.png" alt="logo" width={40} height={50} />
+            <Image src={Logo} alt="logo" width={40} height={50} />
             <span className="hidden text-white lg:block text-2xl font-medium">
               MovieBox
             </span>

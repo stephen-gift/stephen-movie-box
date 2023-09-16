@@ -2,6 +2,9 @@ import Image from "next/image";
 import Like from "./Like";
 import { Movie } from "@/types/Types";
 import Link from "next/link";
+import IMDB from '../assets/IMDB.png'
+import Tomato from '../assets/Tomato.png'
+
 
 async function getMovie(id: number) {
   const options = {
@@ -50,11 +53,11 @@ const MovieCard = async (props: { data: Movie }) => {
           </p>
           <div className="flex items-center justify-between">
             <div className="text-gray-900 text-xs flex gap-2">
-              <Image src="/imdb.png" alt="imdb" width={35} height={17} />
+              <Image src={IMDB.src} alt="imdb" width={35} height={17} />
               <span>{props.data.vote_average * 10} / 100</span>
             </div>
             <div className="text-gray-900 text-xs flex gap-2">
-              <Image src="/orange.png" alt="imdb" width={16} height={17} />
+              <Image src={Tomato.src} alt="imdb" width={16} height={17} />
               <span>{Math.floor(props.data.popularity)}</span>
             </div>
           </div>

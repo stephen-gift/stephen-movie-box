@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import React, { useState } from "react";
+import Favorite from '../assets/Favorite.png'
 
 export default function Like() {
   const [liked, setLiked] = useState<boolean>(false);
@@ -17,7 +18,7 @@ export default function Like() {
         onClick={handleClick}
         className="bg-[#f3f4f665] z-20 p-1 rounded-full flex justify-center items-center"
       >
-        <Image src="/Favorite.png" width={20} height={20} alt="heart" />
+        <Image src={Favourite.src} width={20} height={20} alt="heart" />
       </button>
     </>
   );
