@@ -34,7 +34,12 @@
 
     --radius: 0.5rem;
   }
-
+  .bg-background {
+    background-color: #e0e0e0; /* Example background color */
+  }
+  .text-foreground {
+    color: #333; /* Example text color */
+  }
   .dark {
     --background: 240 10% 3.9%;
     --foreground: 0 0% 98%;
@@ -82,7 +87,7 @@
   -webkit-backdrop-filter: blur(4px);
 }
 
-.hide-scrollbar::-webkit-scrollbar { 
+.hide-scrollbar::-webkit-scrollbar {
   width: 0 !important;
-  display: none; 
+  display: none;
 }

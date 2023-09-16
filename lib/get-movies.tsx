@@ -1,5 +1,5 @@
 export default async function getMovies() {
-  const api_url = `https://api.themoviedb.org/3/movie/popular?api_key=11ca62a738dc81495dca5a3cef42e8f5&language=en-US&page=1`;
+  const api_url = `https://api.themoviedb.org/3/movie/popular?api_key=${process.env.NEXT_PUBLIC_API_KEY}&language=en-US&page=1`;
 
   const res = await fetch(api_url, {
     cache: "no-store",

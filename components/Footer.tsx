@@ -54,7 +54,7 @@ const Footer = () => {
           </div>
           <div className="gap-2">
             <p className="text-sm text-muted-foreground">
-              &copy; 2021 MovieBox by Adriana Eka Prayudha{" "}
+              &copy; 2023 MovieBox by Stephen Gift{" "}
             </p>
             <p className="text-xs text-rose-700 text-muted-foreground">
               Built by{" "}
@@ -62,9 +62,9 @@ const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="italic underline"
-                href="https://github.com/OgaDavid"
+                href="https://github.com/stephen-gift"
               >
-                OgaDavid
+                Stephen Gift
               </Link>{" "}
             </p>
           </div>
